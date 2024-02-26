@@ -52,7 +52,7 @@ public class DemoButton {
         WebElement getTextMessage= driver.findElement (new By.ById ("dynamicClickMessage"));
         String actualElement = getTextMessage.getText ();
         String expectedElementText = "You have done a dynamic click";
-        Assert.assertEquals(actualElement,expectedElementText,"Expected and Actual are not same");
+        Assert.assertEquals(actualElement,expectedElementText,"Actual message is the same with the expected");
     }
 
     @AfterMethod(alwaysRun = true)
