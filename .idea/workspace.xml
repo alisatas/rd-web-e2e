@@ -4,7 +4,12 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="ab245b72-3a84-45d6-8a20-54f6c45fa5c8" name="Changes" comment="" />
+    <list default="true" id="ab245b72-3a84-45d6-8a20-54f6c45fa5c8" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/src/test/java/com/rd/tests/DemoButton.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/rd/tests/GoogleTests.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/resources/config.properties" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/resources/config.properties" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -22,6 +27,9 @@
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="MarkdownSettingsMigration">
+    <option name="stateVersion" value="1" />
   </component>
   <component name="ProjectCodeStyleSettingsMigration">
     <option name="version" value="2" />
@@ -52,7 +60,7 @@
       <recent name="com.rd.drivers" />
     </key>
   </component>
-  <component name="RunManager" selected="TestNG.GoogleTests">
+  <component name="RunManager" selected="TestNG.DemoButton.checkMessage">
     <configuration default="true" type="JetRunConfigurationType">
       <module name="rd-web-e2e-ta" />
       <method v="2">
@@ -66,8 +74,8 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="GoogleTests" type="TestNG" temporary="true" nameIsGenerated="true">
-      <module name="rd-web-e2e-ta" />
+    <configuration name="DemoButton" type="TestNG" temporary="true" nameIsGenerated="true">
+      <module name="rd-web-e2e" />
       <extension name="coverage">
         <pattern>
           <option name="PATTERN" value="com.rd.tests.*" />
@@ -75,7 +83,7 @@
         </pattern>
       </extension>
       <option name="PACKAGE_NAME" value="com.rd.tests" />
-      <option name="MAIN_CLASS_NAME" value="com.rd.tests.GoogleTests" />
+      <option name="MAIN_CLASS_NAME" value="com.rd.tests.DemoButton" />
       <option name="TEST_OBJECT" value="CLASS" />
       <properties />
       <listeners />
@@ -83,8 +91,8 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="GoogleTests.openGooglePageTest" type="TestNG" temporary="true" nameIsGenerated="true">
-      <module name="rd-web-e2e-ta" />
+    <configuration name="DemoButton.checkMessage" type="TestNG" temporary="true" nameIsGenerated="true">
+      <module name="rd-web-e2e" />
       <extension name="coverage">
         <pattern>
           <option name="PATTERN" value="com.rd.tests.*" />
@@ -92,8 +100,8 @@
         </pattern>
       </extension>
       <option name="PACKAGE_NAME" value="com.rd.tests" />
-      <option name="MAIN_CLASS_NAME" value="com.rd.tests.GoogleTests" />
-      <option name="METHOD_NAME" value="openGooglePageTest" />
+      <option name="MAIN_CLASS_NAME" value="com.rd.tests.DemoButton" />
+      <option name="METHOD_NAME" value="checkMessage" />
       <option name="TEST_OBJECT" value="METHOD" />
       <properties />
       <listeners />
@@ -101,8 +109,8 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="GoogleTests.searchGoogleOnGoogle" type="TestNG" temporary="true" nameIsGenerated="true">
-      <module name="rd-web-e2e-ta" />
+    <configuration name="DemoButton.clickButtons" type="TestNG" temporary="true" nameIsGenerated="true">
+      <module name="rd-web-e2e" />
       <extension name="coverage">
         <pattern>
           <option name="PATTERN" value="com.rd.tests.*" />
@@ -110,8 +118,44 @@
         </pattern>
       </extension>
       <option name="PACKAGE_NAME" value="com.rd.tests" />
-      <option name="MAIN_CLASS_NAME" value="com.rd.tests.GoogleTests" />
-      <option name="METHOD_NAME" value="searchGoogleOnGoogle" />
+      <option name="MAIN_CLASS_NAME" value="com.rd.tests.DemoButton" />
+      <option name="METHOD_NAME" value="clickButtons" />
+      <option name="TEST_OBJECT" value="METHOD" />
+      <properties />
+      <listeners />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="DemoButton.fillForm" type="TestNG" temporary="true" nameIsGenerated="true">
+      <module name="rd-web-e2e" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.rd.tests.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.rd.tests" />
+      <option name="MAIN_CLASS_NAME" value="com.rd.tests.DemoButton" />
+      <option name="METHOD_NAME" value="fillForm" />
+      <option name="TEST_OBJECT" value="METHOD" />
+      <properties />
+      <listeners />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="DemoButton.openGooglePageTest" type="TestNG" temporary="true" nameIsGenerated="true">
+      <module name="rd-web-e2e" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.rd.tests.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.rd.tests" />
+      <option name="MAIN_CLASS_NAME" value="com.rd.tests.DemoButton" />
+      <option name="METHOD_NAME" value="openGooglePageTest" />
       <option name="TEST_OBJECT" value="METHOD" />
       <properties />
       <listeners />
@@ -121,9 +165,11 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="TestNG.GoogleTests" />
-        <item itemvalue="TestNG.GoogleTests.searchGoogleOnGoogle" />
-        <item itemvalue="TestNG.GoogleTests.openGooglePageTest" />
+        <item itemvalue="TestNG.DemoButton.checkMessage" />
+        <item itemvalue="TestNG.DemoButton" />
+        <item itemvalue="TestNG.DemoButton.clickButtons" />
+        <item itemvalue="TestNG.DemoButton.fillForm" />
+        <item itemvalue="TestNG.DemoButton.openGooglePageTest" />
       </list>
     </recent_temporary>
   </component>
@@ -164,10 +210,14 @@
   <component name="XDebuggerManager">
     <breakpoint-manager>
       <breakpoints>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/test/java/com/rd/utils/PropertyManager.java</url>
-          <line>9</line>
-          <option name="timeStamp" value="9" />
+        <line-breakpoint enabled="true" type="java-method">
+          <url>file://$PROJECT_DIR$/src/test/java/com/rd/tests/DemoButton.java</url>
+          <line>48</line>
+          <properties class="com.rd.tests.DemoButton" method="checkMessage">
+            <option name="EMULATED" value="true" />
+            <option name="WATCH_EXIT" value="false" />
+          </properties>
+          <option name="timeStamp" value="13" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
