@@ -60,7 +60,7 @@
       <recent name="com.rd.drivers" />
     </key>
   </component>
-  <component name="RunManager" selected="TestNG.AddUser.editTest">
+  <component name="RunManager" selected="TestNG.DemoButton.checkMessage">
     <configuration default="true" type="JetRunConfigurationType">
       <module name="rd-web-e2e-ta" />
       <method v="2">
@@ -127,23 +127,6 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="DemoButton" type="TestNG" temporary="true" nameIsGenerated="true">
-      <module name="rd-web-e2e" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.rd.tests.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="com.rd.tests" />
-      <option name="MAIN_CLASS_NAME" value="com.rd.tests.DemoButton" />
-      <option name="TEST_OBJECT" value="CLASS" />
-      <properties />
-      <listeners />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
     <configuration name="DemoButton.checkMessage" type="TestNG" temporary="true" nameIsGenerated="true">
       <module name="rd-web-e2e" />
       <extension name="coverage">
@@ -162,13 +145,31 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="DemoButton.clickButtons" type="TestNG" temporary="true" nameIsGenerated="true">
+      <module name="rd-web-e2e" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.rd.tests.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.rd.tests" />
+      <option name="MAIN_CLASS_NAME" value="com.rd.tests.DemoButton" />
+      <option name="METHOD_NAME" value="clickButtons" />
+      <option name="TEST_OBJECT" value="METHOD" />
+      <properties />
+      <listeners />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="TestNG.DemoButton.checkMessage" />
+        <item itemvalue="TestNG.DemoButton.clickButtons" />
         <item itemvalue="TestNG.AddUser.editTest" />
         <item itemvalue="TestNG.AddUser" />
         <item itemvalue="TestNG.AddUser.addNewUser" />
-        <item itemvalue="TestNG.DemoButton.checkMessage" />
-        <item itemvalue="TestNG.DemoButton" />
       </list>
     </recent_temporary>
   </component>

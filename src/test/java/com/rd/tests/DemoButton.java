@@ -26,18 +26,21 @@ public class DemoButton {
     }
 
     @Test
-    public void openGooglePageTest() {
+    public void openDemoQAPage() {
         String pageTitle = driver.getTitle();
         Assert.assertEquals(pageTitle,"DEMOQA");
     }
 
     @Test(priority = 1)
-    public void clickButtons(){
-        WebElement userName = driver.findElement( new By.ByXPath  ( "//span[contains(text(),'Buttons')]" ) );
-        userName.click ();
+    public void clickButtons() throws InterruptedException {
+        Thread.sleep(7000); // Hocam burada baska metod yazilabilir simdilik bu sekilde gecmek istedim
+        WebElement popUp= driver.findElement ( new By.ByCssSelector ( ".fc-button.fc-cta-consent.fc-primary-button" ) );
+        popUp.click ();
+
+        WebElement buttonsButton = driver.findElement( new By.ById  ( "div[class='element-list collapse show'] li[class='btn btn-light ']:nth-child(5)" ) );
+        buttonsButton.click ();
         String URL = driver.getCurrentUrl();
         Assert.assertEquals(URL, "https://demoqa.com/buttons" );
-
     }
 
     @Test(priority = 2)
@@ -45,11 +48,11 @@ public class DemoButton {
         Thread.sleep(7000); // Hocam burada baska metod yazilabilir simdilik bu sekilde gecmek istedim
         WebElement popUp= driver.findElement ( new By.ByCssSelector ( ".fc-button.fc-cta-consent.fc-primary-button" ) );
         popUp.click ();
-        WebElement userName = driver.findElement( new By.ByXPath ( "//span[contains(text(),'Buttons')]" ) );
-        userName.click ();
-        WebElement clickMeButton = driver.findElement( new By.ByXPath ("(//*[contains(text(),'Click Me')])[3]"));
+        WebElement buttonsButton = driver.findElement( new By.ByCssSelector  ( "div[class='element-list collapse show'] li[class='btn btn-light ']:nth-child(5)" ) );
+        buttonsButton.click ();
+        WebElement clickMeButton = driver.findElement( new By.ByCssSelector ("div[class='col-12 mt-4 col-md-6'] div:nth-child(4) button"));
         clickMeButton.click ();
-        WebElement getTextMessage= driver.findElement (new By.ById ("dynamicClickMessage"));
+        WebElement getTextMessage= driver.findElement (new By.ByCssSelector ("p[id='dynamicClickMessage']"));
         String actualElement = getTextMessage.getText ();
         String expectedElementText = "You have done a dynamic click";
         Assert.assertEquals(actualElement,expectedElementText,"Actual message is the same with the expected");
